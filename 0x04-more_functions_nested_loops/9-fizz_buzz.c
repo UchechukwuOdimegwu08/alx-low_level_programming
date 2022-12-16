@@ -16,10 +16,4 @@ int main(void)
 		if (start % 5 == 0)
 			printf("Buzz");
 		if (start % 3 != 0 && start % 5 != 0)
-			printf("%d", start);
-
-		putchar(start == end ? '\n' : ' ');
-		start++;
-	}
-	return (0);
-}
+			printf("%
