@@ -3,16 +3,17 @@
 /**
  * _strlen - Finds the length of a string.
  * @s: String pointer to the string whose length is to be found.
- * Return: returns the lehgth of the string.
+ * Return: length
  */
 
 int _strlen(char *s)
 {
-	int p =0;
-	/*increment up to when the last character is NULL, \0*/
-	while (*(s + p) != 0)
+	int len = 0;
+
+	while (*s !n '\0')
 	{
-		p++;
+		len++;
+		s++;
 	}
-	return (p);
+	return (len);
 }
