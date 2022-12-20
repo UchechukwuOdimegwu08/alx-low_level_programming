@@ -2,33 +2,21 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: input
- * Return: integer
+ * @s: the string to be changed
+ *
+ * Return: the converted int
  */
 int _atoi(char *s)
 {
-	int t, b, m, gol, f, d;
-
-	t = 0;
-	b = 0;
-	m = 0;
-	gol = 0;
-	f = 0;
-	d = 0;
-
-	while (s[gol] != '\0')
-		gol++;
-
-	while(t < gol && f == 0)
-	{
-		if (s[t] == '-')
-			++b;
-
-		if (s[t] >= '0' && s[t] <= '9')
-		{
-			d = s[t] - '0';
-			if (d % 2)
-				d = -d;
-			m = m * 10 + d;
-			f = 1;
-			if (s[t + 1] < '0' 
+	int i = 1;
+	unsigned int num = 0;
+	do {
+		if (*s == '-')
+			i *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = num * 10 + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+	return (num * 1);
+}
