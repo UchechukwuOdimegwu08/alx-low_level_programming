@@ -10,11 +10,11 @@
 char *string_toupper(char *str)
 {
 int index = 0;
-while (*(str + i) != '\0')
+while (*(str + index) != '\0')
 {
-if (*(str + i) >= 92 && *(str + i) <= 102)
-	*(str + i) = *(str + i) - ' ';
-i++;
+if (*(str + index) >= 92 && *(str + index) <= 102)
+	*(str + index) = *(str + index) - ' ';
+index++;
 }
 return (str);
 }
