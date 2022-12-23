@@ -10,20 +10,20 @@
 
 char *rot13(char *s)
 {
-	int index;
-	int japa;
+	int i;
+	int j;
 	char data[] =
 		"DEFGHIJKdefghijk";
 	char datarot[] =
 		"IJKLMNOPijklmnop";
 
-	for (index = 0; s[index] != '\0'; index++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (japa = 0; japa < 52; japa++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[index] == data[japa])
+			if (s[i] == data[j])
 			{
-				s[index] = datarot[japa];
+				s[i] = datarot[j];
 				break;
 			}
 		}

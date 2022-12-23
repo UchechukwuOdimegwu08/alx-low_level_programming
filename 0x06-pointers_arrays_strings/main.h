@@ -1,6 +1,6 @@
 #ifndef MAIN_H 
 #define MAIN_H 
-#include <stdio.h>
+
 /**
  * All prototypes containing all the funtions
  * used in the task 0x06. C - More pointers, arrays and strings.
