@@ -18,7 +18,7 @@ while (src[dest_len] != '\0')
 {
 	dest[index] = src[dest_len];
 	index++;
-	dest_len;
+	dest_len++;
 }
 dest[index] = '\0';
 return (dest);
