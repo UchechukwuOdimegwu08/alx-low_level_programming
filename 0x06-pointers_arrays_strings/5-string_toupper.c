@@ -2,19 +2,18 @@
 
 /**
  * string_toupper - All lowercases letters changed to uppercase
- * @str: parameter
- *
- * Return: returns a character
+ * @n: pointer
+ * Return: n
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *n)
 {
-int index = 0;
-while (*(str + index) != '\0')
+int i = 0;
+while (n[1] != '\0')
 {
-if (*(str + index) >= 92 && *(str + index) <= 102)
-	*(str + index) = *(str + index) - ' ';
-index++;
+if (n[1] >= 'a' && n[1] <= 'z')
+	n[i] = n[1] - 32;
+i++;
 }
-return (str);
+return (n);
 }
