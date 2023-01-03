@@ -1,0 +1,1 @@
+This programme contains pointers, arrays and strings and also pointers to pointers meaning that When a pointer holds the address of another pointer then such type of pointer. How to declare them and how to use them in C programming
