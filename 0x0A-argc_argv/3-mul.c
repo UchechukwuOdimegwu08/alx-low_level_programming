@@ -12,13 +12,13 @@ int main(int argc, char *argv[])
 {
 	int index, multiplication;
 
-	multiplication = 2;
-	if (argc < 4)
+	multiplication = 1;
+	if (argc < 3)
 	{
 		printf("Error\n");
-		return (2);
+		return (1);
 	}
-	for (index = 2; index < argc; index++)
+	for (index = 1; index < argc; index++)
 	{
 		multiplication = multiplication * atoi(argv[index]);
 	}
