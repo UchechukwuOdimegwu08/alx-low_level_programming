@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 	if (argc < 4)
 	{
 		printf("Error\n");
-		return (1);
+		return (2);
 	}
-	for (index = 1; index < argc; index++)
+	for (index = 2; index < argc; index++)
 	{
 		multiplication = multiplication * atoi(argv[index]);
 	}
