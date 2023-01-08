@@ -10,7 +10,7 @@
  */
 int main(int args, char *argv[])
 {
-	int c, j, result, coins = 0;
+	int c, j, result, coins[] = {25, 10, 5, 2, 1};
 
 	if (args != 2)
 	{
@@ -34,6 +34,6 @@ int main(int args, char *argv[])
 		}
 	}
 
-print("%d\n", result);
+printf("%d\n", result);
 return (0);
 }
